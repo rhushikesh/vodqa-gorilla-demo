@@ -4,7 +4,8 @@
   "description": "Demo REST server for blog post collection",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/VuClip/vodqa-gorilla-demo/issues"
   },
-  "homepage": "https://github.com/VuClip/vodqa-gorilla-demo#readme"
+  "homepage": "https://github.com/VuClip/vodqa-gorilla-demo#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
 }
