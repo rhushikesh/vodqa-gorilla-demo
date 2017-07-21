@@ -6,9 +6,7 @@ exports.all = [
                   "content": "Amet tempor aliquip ut eu excepteur commodo fugiat. Irure sint ad cillum officia. Esse voluptate ullamco aute ipsum sit. Amet in aliqua est cupidatat nostrud elit. Velit deserunt sunt ea veniam aliquip occaecat eiusmod. Ut tempor sunt proident occaecat adipisicing nulla aute aliquip nostrud eiusmod mollit pariatur.\r\nReprehenderit cupidatat adipisicing est anim ullamco sit commodo nulla cillum aliqua. Tempor reprehenderit magna non sit aute exercitation aliquip anim. Est et nostrud excepteur Lorem est eiusmod id aliquip culpa eiusmod in quis velit. Mollit eiusmod duis aute aliquip id irure aliquip eu dolore laboris labore occaecat. Ad sint esse mollit laborum nisi reprehenderit nisi excepteur ex eu. Aliqua nulla occaecat ex minim irure ea Lorem et duis cillum elit nulla culpa. Aute sit cillum Lorem exercitation pariatur proident et sit tempor mollit esse ut eu est.\r\nExcepteur incididunt commodo tempor fugiat quis velit. Cupidatat enim dolore qui fugiat ullamco fugiat dolor incididunt. Ipsum adipisicing est pariatur magna do sit anim veniam esse voluptate. Ut nostrud aliquip aliqua ad sunt aute veniam veniam sint proident esse. Do consequat duis pariatur in officia magna mollit deserunt. Mollit sunt tempor esse enim aliqua ullamco. Amet commodo cupidatat nostrud adipisicing.\r\n",
                   "locale": "fr_BE",
                   "category": "travel",
-                  "tags": [
-                    "magna"
-                  ],
+                  "tags": [],
                   "relatedBlogPosts": [
                     {
                       "title": "Quis proident pariatur anim proident nisi aute.",
@@ -347,10 +345,7 @@ exports.all = [
                   "content": "Duis commodo proident proident in. In exercitation qui reprehenderit aliqua consectetur enim deserunt. Ut laborum elit nisi dolore. Et est nostrud adipisicing cupidatat. Laboris aliqua irure deserunt duis voluptate cupidatat veniam labore est fugiat consectetur consectetur irure quis.\r\nDuis laborum voluptate fugiat labore amet deserunt laborum ea culpa nostrud ut. Consequat nulla cillum ex reprehenderit et commodo mollit ipsum ad ea incididunt non. Aliquip ea cupidatat et esse ad aliqua. Dolore consectetur culpa id ipsum in laboris nulla excepteur cupidatat ex. Veniam eiusmod cillum pariatur sint. Cillum magna ea non nostrud elit occaecat do in.\r\nExcepteur minim incididunt eu commodo amet proident sint do irure do in duis duis dolor. Irure enim nisi ea adipisicing ad. Minim anim id magna aliqua quis elit veniam do eiusmod veniam et nulla consequat. Dolor nisi nulla quis voluptate aliqua in consequat laborum adipisicing dolore aliquip veniam.\r\n",
                   "locale": "nl_BE",
                   "category": "travel",
-                  "tags": [
-                    "fugiat",
-                    "mollit"
-                  ],
+                  "tags": [],
                   "relatedBlogPosts": [
                     {
                       "title": "Amet id adipisicing magna excepteur incididunt dolor ad nulla excepteur nostrud.",
@@ -1144,9 +1139,7 @@ exports.all = [
                   "content": "Irure enim adipisicing culpa consectetur est et nostrud officia. Voluptate do quis enim eu amet dolor nisi. Labore cillum ea reprehenderit exercitation proident veniam labore eu cillum anim occaecat exercitation. Proident minim deserunt irure occaecat consequat.\r\nNulla proident commodo officia culpa elit ipsum dolor nisi commodo. Irure quis dolor velit laborum et in commodo sunt nostrud tempor sunt dolore cillum commodo. Ipsum magna commodo et pariatur incididunt mollit sunt eiusmod tempor qui.\r\n",
                   "locale": "en_IN",
                   "category": "food",
-                  "tags": [
-                    "dolor"
-                  ],
+                  "tags": [],
                   "relatedBlogPosts": [
                     {
                       "title": "Velit duis aliquip velit veniam ex sit aliquip veniam incididunt aliqua reprehenderit exercitation.",
@@ -1511,11 +1504,7 @@ exports.all = [
                   "content": "Exercitation anim minim reprehenderit et culpa culpa eu id. Aliquip et nostrud reprehenderit deserunt. Lorem eu laboris aute officia id. Anim est fugiat qui mollit culpa adipisicing aute. Tempor culpa consequat voluptate deserunt cupidatat consectetur sunt adipisicing. Consequat eiusmod consequat ad anim laborum veniam ipsum esse. Id ea fugiat sunt officia nisi laborum incididunt id aliqua.\r\n",
                   "locale": "en_US",
                   "category": "food",
-                  "tags": [
-                    "proident",
-                    "ut",
-                    "ex"
-                  ],
+                  "tags": [],
                   "relatedBlogPosts": [
                     {
                       "title": "Cillum exercitation occaecat laboris ex reprehenderit.",
@@ -1768,12 +1757,7 @@ exports.all = [
                   "content": "Magna aute et mollit mollit officia duis nostrud elit. Consequat labore qui laborum elit excepteur sunt deserunt irure sint ut. Consequat officia nisi consequat sint ea. Aute exercitation veniam ut ut. Consectetur magna incididunt fugiat proident ea Lorem ea magna velit consectetur.\r\nIrure est in aliqua aliqua exercitation mollit enim minim nostrud Lorem aliqua quis ex magna. Quis adipisicing laboris ex reprehenderit do do enim ad consequat sit. Velit incididunt et est labore nisi sint reprehenderit esse amet ad nisi deserunt irure magna. Exercitation aute ut Lorem adipisicing ullamco consequat officia sunt eu aliqua sint ex veniam. Commodo do culpa reprehenderit eiusmod. Nulla labore duis tempor do voluptate ut velit voluptate ullamco voluptate. Ex consectetur nisi enim ad incididunt consectetur consequat proident deserunt occaecat eu.\r\nEsse elit officia amet et amet commodo occaecat cillum. Elit ullamco Lorem in dolore. Non laboris enim ad veniam occaecat adipisicing. Aliquip sit nisi magna nostrud est aliqua eu. Esse nulla sint ea quis. Sunt cillum quis aute irure cupidatat. In veniam in incididunt ea qui sint culpa enim dolore esse.\r\n",
                   "locale": "en_US",
                   "category": "photography",
-                  "tags": [
-                    "dolor",
-                    "ex",
-                    "id",
-                    "eiusmod"
-                  ],
+                  "tags": [],
                   "relatedBlogPosts": [
                     {
                       "title": "Dolor anim laboris commodo adipisicing et deserunt.",
