@@ -16,6 +16,21 @@ function updateSocialShareCount(post) {
   return post;
 }
 
+function removeEmptyTags(post) {
+  if(post.tags != null && post.tags.length == 0) {
+    post.tags = null;
+  }
+  return post;
+}
+
+function filterRelatedBlogPosts(post) {
+  const currentLocale = post.locale;
+  const filteredRelatedBlogPosts = post.relatedBlogPosts.filter(rP => rP.locale == currentLocale);
+  post.relatedBlogPosts = filteredRelatedBlogPosts;
+  return post;
+}
+
+
 function filterByLocale(post, locale) {
   return !locale || (post.locale == locale);
 }
@@ -33,5 +48,23 @@ exports.getAllBy = function(query) {
           .filter(p => filterByLocale(p, query.locale))
           .filter(p => filterByCategory(p, query.category))
           .filter(p => filterByAuthor(p, query.author))
+          .filter(filterRelatedBlogPosts);
+};
+
+exports.getAllByV1 = function(query) {
+  return blogPosts
+          .filter(p => filterByLocale(p, query.locale))
+          .filter(p => filterByCategory(p, query.category))
+          .filter(p => filterByAuthor(p, query.author))
+          .map(updateSocialShareCount)
+          .map(removeEmptyTags);
+};
+
+exports.getAllByV2 = function(query) {
+  return blogPosts
+          .filter(p => filterByLocale(p, query.locale))
+          .filter(p => filterByCategory(p, query.category))
+          .filter(p => filterByAuthor(p, query.author))
+          .filter(filterRelatedBlogPosts)
           .map(updateSocialShareCount);
 };
