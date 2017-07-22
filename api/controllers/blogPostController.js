@@ -1,7 +1,11 @@
 'use strict';
 
-const repo = require('../services/blogPostService');
+const service = require('../services/blogPostService');
 
 exports.getAll = function(req, res) {
-  res.send(repo.getAllByV2(req.query));
+  res.send(service.getAll(req.query));
+};
+
+exports.get = function(req, res) {
+  res.send(service.get(req.params.blogPostId));
 };

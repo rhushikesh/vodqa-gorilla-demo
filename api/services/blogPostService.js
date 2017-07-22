@@ -43,28 +43,39 @@ function filterByAuthor(post, author) {
   return !author || (post.author == author);
 }
 
-exports.getAllBy = function(query) {
+function filterByQuery(post, query) {
+  return filterByLocale(post, query.locale)
+    && filterByCategory(post, query.category)
+    && filterByAuthor(post, query.author);
+}
+
+function applyOriginal(post) {
+  return filterRelatedBlogPosts(post);
+}
+
+function applyV1(post) {
+  const withUpdatedSocialShareCount = updateSocialShareCount(post)
+  return removeEmptyTags(withUpdatedSocialShareCount);
+}
+
+function applyV2(post) {
+  const withUpdatedSocialShareCount = updateSocialShareCount(post)
+  return filterRelatedBlogPosts(withUpdatedSocialShareCount);
+}
+
+const processorFunction = applyOriginal;
+
+exports.getAll = function(query) {
   return blogPosts
-          .filter(p => filterByLocale(p, query.locale))
-          .filter(p => filterByCategory(p, query.category))
-          .filter(p => filterByAuthor(p, query.author))
-          .filter(filterRelatedBlogPosts);
+          .filter(p => filterByQuery(p, query))
+          .map(processorFunction);
 };
 
-exports.getAllByV1 = function(query) {
-  return blogPosts
-          .filter(p => filterByLocale(p, query.locale))
-          .filter(p => filterByCategory(p, query.category))
-          .filter(p => filterByAuthor(p, query.author))
-          .map(updateSocialShareCount)
-          .map(removeEmptyTags);
-};
+exports.get = function(blogPostId) {
+  const getById = blogPosts
+                    .filter(p => p.id == blogPostId)
+                    .map(processorFunction)[0];
 
-exports.getAllByV2 = function(query) {
-  return blogPosts
-          .filter(p => filterByLocale(p, query.locale))
-          .filter(p => filterByCategory(p, query.category))
-          .filter(p => filterByAuthor(p, query.author))
-          .filter(filterRelatedBlogPosts)
-          .map(updateSocialShareCount);
+  if(getById) return getById;
+  return {};
 };
