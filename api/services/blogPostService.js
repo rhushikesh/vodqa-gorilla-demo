@@ -63,7 +63,7 @@ function applyV2(post) {
   return filterRelatedBlogPosts(withUpdatedSocialShareCount);
 }
 
-const processorFunction = applyV1;
+const processorFunction = applyV2;
 
 exports.getAll = function(query) {
   return blogPosts
